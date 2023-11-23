@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		380AA53E2B101D7900FDD57C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 380AA53D2B101D7900FDD57C /* logo.png */; };
 		384E9C1F2AC4B1E700E7BE0E /* SkipperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E9C1E2AC4B1E700E7BE0E /* SkipperApp.swift */; };
 		384E9C212AC4B1E700E7BE0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E9C202AC4B1E700E7BE0E /* ContentView.swift */; };
 		384E9C232AC4B1E900E7BE0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384E9C222AC4B1E900E7BE0E /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		380AA53D2B101D7900FDD57C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Skipper/logo.png; sourceTree = "<group>"; };
 		384E9C1B2AC4B1E700E7BE0E /* Skipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		384E9C1E2AC4B1E700E7BE0E /* SkipperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipperApp.swift; sourceTree = "<group>"; };
 		384E9C202AC4B1E700E7BE0E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		384E9C122AC4B1E700E7BE0E = {
 			isa = PBXGroup;
 			children = (
+				380AA53D2B101D7900FDD57C /* logo.png */,
 				385F5AD72AD09521001497DF /* stonePic.webp */,
 				38B5F9172AC544930009E2AB /* Assets.xcassets */,
 				384E9C1D2AC4B1E700E7BE0E /* Skipper */,
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				384E9C272AC4B1E900E7BE0E /* Preview Assets.xcassets in Resources */,
+				380AA53E2B101D7900FDD57C /* logo.png in Resources */,
 				38B5F9182AC544930009E2AB /* Assets.xcassets in Resources */,
 				385F5AD82AD09521001497DF /* stonePic.webp in Resources */,
 				384E9C232AC4B1E900E7BE0E /* Assets.xcassets in Resources */,

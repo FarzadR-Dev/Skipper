@@ -54,21 +54,6 @@ struct DetailEditView: View {
     }
 }
 
-//func loadTransferable(from imageSelection: PhotosPickerItem) -> Progress {
-//    return imageSelection.loadTransferable(type: Image.self) { result in
-//        DispatchQueue.main.async {
-//            guard imageSelection == self.imageSelection else { return }
-//            switch result {
-//            case .success(let image?):
-//                // Handle the success case with the image.
-//            case .success(nil):
-//                // Handle the success case with an empty value.
-//            case .failure(let error):
-//                // Handle the failure case with the provided error.
-//            }
-//        }
-//    }
-//}
 
 #Preview {
     DetailEditView(skip: .constant(Skip.sampleData[1]))
