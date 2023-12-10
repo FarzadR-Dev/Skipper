@@ -10,9 +10,10 @@ import SwiftUI
 struct NewSkipView: View {
     
     @State var tempCount: Int = 0
-    
+    @Binding var skips: [Skip]
     @State private var newSkip = Skip.emptySkip
         @Binding var isPresentingNewSkipView: Bool
+     
 
     var body: some View {
         VStack{
@@ -38,18 +39,28 @@ struct NewSkipView: View {
                 Text("Reset")
             }
             .padding()
-            
+            Form{
+                TextField("Location", text: $newSkip.location)
+                ThemePicker(selection: $newSkip.theme)
+                Text("Date: \(Date().formatted(date:.abbreviated, time: .omitted))")
+            }
+            .background(newSkip.theme.mainColor)
             Button(action: {
+                newSkip.count = tempCount
+                newSkip.date = Date()
                 
+                skips.append(newSkip)
+                isPresentingNewSkipView = false
             }){
                 Text("Save")
             }
+            
         }
     }
 }
 
 struct NewSkipView_Previews: PreviewProvider {
     static var previews: some View {
-        NewSkipView(isPresentingNewSkipView: .constant(true))
+        NewSkipView(skips: .constant(Skip.sampleData), isPresentingNewSkipView: .constant(true))
     }
 }

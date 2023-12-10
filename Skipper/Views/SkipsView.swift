@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SkipsView: View {
     @Binding var skips: [Skip]
-    @State private var isPresentingNewScrumView = false
+    @State private var isPresentingNewSkipView = false
     
     var body: some View {
         NavigationStack {
@@ -23,14 +23,14 @@ struct SkipsView: View {
             .navigationTitle("History of Skips")
             .toolbar {
                 Button(action: {
-                    isPresentingNewScrumView = true
+                    isPresentingNewSkipView = true
                 }){
                         Image(systemName: "plus")
                 }
                 }
             }
-        .sheet(isPresented: $isPresentingNewScrumView) {
-            
+        .sheet(isPresented: $isPresentingNewSkipView) {
+            NewSkipView(skips: $skips, isPresentingNewSkipView: $isPresentingNewSkipView)
         }
         }
         
